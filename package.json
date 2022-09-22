@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "web": "export SKIP_PREFLIGHT_CHECK=true && react-app-rewired start"
+    "web": "export SKIP_PREFLIGHT_CHECK=true && react-app-rewired start",
+    "web:win": "set SKIP_PREFLIGHT_CHECK=true&&react-app-rewired start"
   },
   "dependencies": {
     "react": "18.1.0",
