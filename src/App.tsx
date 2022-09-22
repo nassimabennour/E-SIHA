@@ -12,11 +12,20 @@ import React from 'react';
 import {
   SafeAreaView
 } from 'react-native';
+import { Button } from './components/atoms/Button';
 
 
 const App = () => {
   return (
     <SafeAreaView>
+      <Button 
+        //disabled={false} 
+        onPress={()=>{
+          console.log("pressed")
+        }}
+        text={"Go"}
+      />
+
       
     </SafeAreaView>
   );
