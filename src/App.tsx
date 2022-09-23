@@ -19,7 +19,10 @@ const App = () => {
   return (
     <SafeAreaView>
       <Button 
-        //disabled={false} 
+        disabled={true}
+        stretched = {true} 
+        outlined = {false}
+        type = "danger"
         onPress={()=>{
           console.log("pressed")
         }}
