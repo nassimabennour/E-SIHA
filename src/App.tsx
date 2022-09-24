@@ -12,25 +12,22 @@ import React from "react";
 import { SafeAreaView } from "react-native";
 import { Button } from "./components/atoms/Button";
 import { Input } from "./components/atoms/Input";
-
+import { Typography } from "./components/atoms/Typography";
 const App = () => {
   return (
     <SafeAreaView>
-      <>
-        <Input placeHolder="test" borderBottom={true} password={true} />
-      </>
-      <>
-        <Button
-          disabled={true}
-          stretched={false}
-          outlined={false}
-          type="primary"
-          onPress={() => {
-            console.log("pressed");
-          }}
-          text={"Go"}
-        />
-      </>
+      <Typography text="Heading" textType={"H5"} />
+      <Input placeHolder="test" borderBottom={true} password={true} />
+      <Button
+        disabled={true}
+        stretched={false}
+        outlined={false}
+        type="primary"
+        onPress={() => {
+          console.log("pressed");
+        }}
+        text={"Go"}
+      />
     </SafeAreaView>
   );
 };
