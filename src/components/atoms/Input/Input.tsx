@@ -13,14 +13,12 @@ export const Input: FC<Props> = ({
   password = false,
 }) => {
   return (
-    <>
-      <TextInput
-        placeholder={placeHolder}
-        placeholderTextColor="gray"
-        secureTextEntry={password}
-        style={[styles.container, { borderBottomWidth: borderBottom ? 1 : 0 }]}
-      />
-    </>
+    <TextInput
+      placeholder={placeHolder}
+      placeholderTextColor="gray"
+      secureTextEntry={password}
+      style={[styles.container, { borderBottomWidth: borderBottom ? 1 : 0 }]}
+    />
   );
 };
 
@@ -29,6 +27,6 @@ const styles = StyleSheet.create({
     height: 15,
     margin: 5,
     paddingVertical: 10,
-    paddingHorizontal: 5
+    paddingHorizontal: 5,
   },
 });
