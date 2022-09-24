@@ -7,15 +7,15 @@ type Props = {
   onPress: () => void;
   stretched?: boolean;
   outlined?: boolean;
-  type?: "primary" | "secondary" | "danger" | "warning"
+  type?: "primary" | "secondary" | "danger" | "warning";
 };
 
 const buttonTypeColor = {
-    primary : "blue",
-    secondary: "gray",
-    danger: "red",
-    warning: "orange"
-}
+  primary: "blue",
+  secondary: "gray",
+  danger: "red",
+  warning: "orange",
+};
 
 export const Button: FC<Props> = ({
   text,
@@ -23,7 +23,7 @@ export const Button: FC<Props> = ({
   onPress,
   stretched = false,
   outlined = false,
-  type = "primary"
+  type = "primary",
 }) => {
   return (
     <>
@@ -33,12 +33,17 @@ export const Button: FC<Props> = ({
         style={[
           styles.container,
           { width: stretched ? "100%" : 80 },
-          outlined ? {...styles.outlinedButton, borderColor: buttonTypeColor[type]} : {},
-          {backgroundColor : outlined ? "white" : buttonTypeColor[type]}
+          outlined
+            ? { ...styles.outlinedButton, borderColor: buttonTypeColor[type] }
+            : {},
+          { backgroundColor: outlined ? "white" : buttonTypeColor[type] },
         ]}
       >
         <Text
-          style={[styles.textStyle, outlined ? { color: buttonTypeColor[type]} : {}]}
+          style={[
+            styles.textStyle,
+            outlined ? { color: buttonTypeColor[type] } : {},
+          ]}
         >
           {text}
         </Text>
@@ -50,14 +55,14 @@ export const Button: FC<Props> = ({
 const styles = StyleSheet.create({
   container: {
     height: 15,
-    borderRadius: 10
+    borderRadius: 10,
   },
   textStyle: {
     textAlign: "center",
     fontSize: 10,
-    color: "white"
+    color: "white",
   },
   outlinedButton: {
-    borderWidth: 1
-  }
+    borderWidth: 1,
+  },
 });
