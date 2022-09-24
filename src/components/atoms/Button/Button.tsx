@@ -52,12 +52,14 @@ export const Button: FC<Props> = ({
 
 const styles = StyleSheet.create({
   container: {
-    height: 15,
     borderRadius: 10,
+    alignSelf: "center",
+    margin: 10,
+    padding: 3
   },
   textStyle: {
     textAlign: "center",
-    fontSize: 10,
+    fontSize: 9,
     color: "white",
   },
   outlinedButton: {
