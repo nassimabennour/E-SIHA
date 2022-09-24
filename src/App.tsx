@@ -8,26 +8,29 @@
  * @format
  */
 
-import React from 'react';
-import {
-  SafeAreaView
-} from 'react-native';
-import { Button } from './components/atoms/Button';
-
+import React from "react";
+import { SafeAreaView } from "react-native";
+import { Button } from "./components/atoms/Button";
+import { Input } from "./components/atoms/Input";
 
 const App = () => {
   return (
     <SafeAreaView>
-      <Button 
-        disabled={true}
-        stretched = {true} 
-        outlined = {false}
-        type = "danger"
-        onPress={()=>{
-          console.log("pressed")
-        }}
-        text={"Go"}
-      />
+      <>
+        <Input placeHolder="test" borderBottom={true} password={true} />
+      </>
+      <>
+        <Button
+          disabled={true}
+          stretched={false}
+          outlined={false}
+          type="primary"
+          onPress={() => {
+            console.log("pressed");
+          }}
+          text={"Go"}
+        />
+      </>
     </SafeAreaView>
   );
 };
