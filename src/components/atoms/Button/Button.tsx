@@ -26,29 +26,27 @@ export const Button: FC<Props> = ({
   type = "primary",
 }) => {
   return (
-    <>
-      <TouchableOpacity
-        onPress={onPress}
-        disabled={disabled}
+    <TouchableOpacity
+      onPress={onPress}
+      disabled={disabled}
+      style={[
+        styles.container,
+        { width: stretched ? "100%" : 80 },
+        outlined
+          ? { ...styles.outlinedButton, borderColor: buttonTypeColor[type] }
+          : {},
+        { backgroundColor: outlined ? "white" : buttonTypeColor[type] },
+      ]}
+    >
+      <Text
         style={[
-          styles.container,
-          { width: stretched ? "100%" : 80 },
-          outlined
-            ? { ...styles.outlinedButton, borderColor: buttonTypeColor[type] }
-            : {},
-          { backgroundColor: outlined ? "white" : buttonTypeColor[type] },
+          styles.textStyle,
+          outlined ? { color: buttonTypeColor[type] } : {},
         ]}
       >
-        <Text
-          style={[
-            styles.textStyle,
-            outlined ? { color: buttonTypeColor[type] } : {},
-          ]}
-        >
-          {text}
-        </Text>
-      </TouchableOpacity>
-    </>
+        {text}
+      </Text>
+    </TouchableOpacity>
   );
 };
 
