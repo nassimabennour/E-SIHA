@@ -20,5 +20,6 @@ export const typography: { [key: string]: StyleProp<TextStyle> } = {
   H4: { fontSize: 9, ...sharedHeadingStyle },
   H5: { fontSize: 7, ...sharedHeadingStyle },
   blackCentredText: { color: "black", ...sharedCentredText},
-  blueCentredText:{ color: "blue", ...sharedCentredText}
+  blueCentredText:{ color: "blue", ...sharedCentredText},
+  blackText:{ color: "black", fontSize: 7}
 };
