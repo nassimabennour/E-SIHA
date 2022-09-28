@@ -11,7 +11,7 @@ type Props = {
 
 export const RadioBttn : FC<Props> = ({
     value,
-    status,
+    status="unchecked",
     color="blue"
 }) => {
     return(
