@@ -1,24 +1,50 @@
-import React, { FC } from "react";
-import { RadioButton } from "react-native-paper"
+import React, { FC, useState } from "react";
+import { StyleSheet, TouchableOpacity, View } from "react-native";
 
 type Props = {
-    value : string;
-    status?: "checked" | "unchecked" | undefined;
-    //disabled?: boolean;
-    //onPress : () => void;
-    color?: string;
-}
+  isChecked?: boolean;
+  disabled?: boolean;
+  //onPress : () => void;
+};
 
-export const RadioBttn : FC<Props> = ({
-    value,
-    status="unchecked",
-    color="blue"
+export const RadioButton: FC<Props> = ({
+  isChecked = false,
+  disabled = false,
 }) => {
-    return(
-        <RadioButton
-            value={value}
-            status={status}
-            color={color}
-        />
-    )
-}
+  const [isRadioChecked, setIsRadioChecked] = useState(isChecked);
+  return (
+    <TouchableOpacity
+      onPress={() => {
+        console.log("pressed");
+        setIsRadioChecked(!isRadioChecked);
+      }}
+      style={[styles.container, { borderColor: disabled ? "gray" : "blue" }]}
+      disabled={disabled}
+    >
+      <View
+        style={[
+          isRadioChecked ? styles.btnFill : {},
+          { backgroundColor: disabled ? "gray" : "blue" },
+        ]}
+      ></View>
+    </TouchableOpacity>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    borderWidth: 1,
+    width: 10,
+    height: 10,
+    borderColor: "blue",
+    borderRadius: 50,
+  },
+  btnFill: {
+    backgroundColor: "blue",
+    width: 7,
+    height: 7,
+    borderRadius: 50,
+    alignSelf: "center",
+    marginTop: 0.75,
+  },
+});
