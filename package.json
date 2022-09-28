@@ -12,11 +12,13 @@
     "web:win": "set SKIP_PREFLIGHT_CHECK=true&&react-app-rewired start"
   },
   "dependencies": {
+    "@react-native-community/checkbox": "^0.5.12",
     "react": "18.1.0",
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
     "react-native": "0.70.1",
+    "react-native-paper": "^4.12.4",
     "react-native-web": "^0.18.9",
     "react-scripts": "^4.0.3"
   },
