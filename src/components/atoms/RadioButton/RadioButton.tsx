@@ -3,7 +3,7 @@ import { RadioButton } from "react-native-paper"
 
 type Props = {
     value : string;
-    status: "checked" | "unchecked" | undefined;
+    status?: "checked" | "unchecked" | undefined;
     //disabled?: boolean;
     //onPress : () => void;
     color?: string;
