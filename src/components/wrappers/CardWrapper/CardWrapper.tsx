@@ -8,9 +8,12 @@ export const CardWrapper: FC<PropsWithChildren> = ({ children }) => {
 const styles = StyleSheet.create({
   container: {
     padding: 5,
-    margin: 5,
+    marginVertical: 20,
+    marginHorizontal: 10,
+    paddingHorizontal: 5,
+    paddingVertical: 20,
     borderWidth: 0.5,
-    borderColor: "blue",
+    borderColor: "#2d6be6",
     borderRadius: 10
   },
 });

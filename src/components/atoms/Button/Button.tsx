@@ -11,7 +11,7 @@ type Props = {
 };
 
 const buttonTypeColor = {
-  primary: "blue",
+  primary: "#2d6be6",
   secondary: "gray",
   danger: "red",
   warning: "orange",

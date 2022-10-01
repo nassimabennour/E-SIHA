@@ -18,13 +18,13 @@ export const RadioButton: FC<Props> = ({
         console.log("pressed");
         setIsRadioChecked(!isRadioChecked);
       }}
-      style={[styles.container, { borderColor: disabled ? "gray" : "blue" }]}
+      style={[styles.container, { borderColor: disabled ? "gray" : "#2d6be6" }]}
       disabled={disabled}
     >
       <View
         style={[
           isRadioChecked ? styles.btnFill : {},
-          { backgroundColor: disabled ? "gray" : "blue" },
+          { backgroundColor: disabled ? "gray" : "#2d6be6" },
         ]}
       ></View>
     </TouchableOpacity>
@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     width: 10,
     height: 10,
-    borderColor: "blue",
+    borderColor: "#2d6be6",
     borderRadius: 50,
   },
   btnFill: {
-    backgroundColor: "blue",
+    backgroundColor: "#2d6be6",
     width: 7,
     height: 7,
     borderRadius: 50,

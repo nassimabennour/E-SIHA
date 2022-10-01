@@ -2,13 +2,13 @@ import { StyleProp, TextStyle } from "react-native";
 
 const sharedHeadingStyle: StyleProp<TextStyle> = {
   fontWeight: "bold",
-  color: "blue",
+  color: "#2d6be6",
   textAlign: "center",
 };
 
 const sharedCentredText: StyleProp<TextStyle> = {
   textAlign: "center",
-  fontSize: 7,
+  fontSize: 14,
 };
 export const typography: { [key: string]: StyleProp<TextStyle> } = {
   H1: {
@@ -16,11 +16,11 @@ export const typography: { [key: string]: StyleProp<TextStyle> } = {
     ...sharedHeadingStyle,
   },
   H2: { fontSize: 13, ...sharedHeadingStyle },
-  H3: { fontSize: 11, ...sharedHeadingStyle },
+  H3: { fontSize: 30, ...sharedHeadingStyle },
   H4: { fontSize: 9, ...sharedHeadingStyle },
   H5: { fontSize: 7, ...sharedHeadingStyle },
   blackCentredText: { color: "black", ...sharedCentredText },
-  blueCentredText: { color: "blue", ...sharedCentredText },
+  blueCentredText: { color: "#2d6be6", ...sharedCentredText },
   blackText: { color: "black", fontSize: 7 },
-  N1: { fontSize: 10, fontWeight: "bold", color: "blue" },
+  N1: { fontSize: 20, fontWeight: "bold", color: "#2d6be6" },
 };

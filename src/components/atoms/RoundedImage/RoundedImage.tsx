@@ -12,7 +12,6 @@ export const RoundedImage: FC<Props> = ({ imageSrc }) => {
       source={{
         uri: 'https://cours-informatique-gratuit.fr/wp-content/uploads/2014/05/lien.png',
       }}
-        /*source={require('../../../assets/images/6400_6_04.jpg')}*/
         style={styles.image}
       />
     </TouchableOpacity>
@@ -21,12 +20,12 @@ export const RoundedImage: FC<Props> = ({ imageSrc }) => {
 
 const styles = StyleSheet.create({
   image: {
-    width: 50,
-    height: 50,
-    borderRadius: 50,
-    marginHorizontal: 0.5,
-    marginVertical: 0.5,
-    borderColor: "blue",
+    width: 100,
+    height: 100,
+    borderRadius: 100,
+    marginHorizontal: 10,
+    marginVertical: 10,
+    borderColor: "#2d6be6",
     borderWidth: 1,
     alignSelf: "center"
   },
