@@ -31,7 +31,7 @@ export const Button: FC<Props> = ({
       disabled={disabled}
       style={[
         styles.container,
-        { width: stretched ? "100%" : 80 },
+        { width: stretched ? "80%" : 80 },
         outlined
           ? { ...styles.outlinedButton, borderColor: buttonTypeColor[type] }
           : {},
@@ -54,13 +54,18 @@ const styles = StyleSheet.create({
   container: {
     borderRadius: 10,
     alignSelf: "center",
-    margin: 10,
-    padding: 3
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 50,
+    padding: 3,
+    height: 40,
+    marginVertical: 20,
   },
   textStyle: {
     textAlign: "center",
-    fontSize: 9,
+    fontSize: 16,
     color: "white",
+    paddingHorizontal: 10
   },
   outlinedButton: {
     borderWidth: 1,

@@ -24,10 +24,10 @@ export const Input: FC<Props> = ({
 
 const styles = StyleSheet.create({
   textStyle: {
-    height: 15,
+    height: 40,
     margin: 5,
     paddingVertical: 10,
     paddingHorizontal: 5,
-    fontSize: 10
+    fontSize: 16
   },
 });

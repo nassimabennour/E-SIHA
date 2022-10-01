@@ -34,17 +34,17 @@ export const RadioButton: FC<Props> = ({
 const styles = StyleSheet.create({
   container: {
     borderWidth: 1,
-    width: 10,
-    height: 10,
+    width: 20,
+    height: 20,
     borderColor: "#2d6be6",
     borderRadius: 50,
   },
   btnFill: {
     backgroundColor: "#2d6be6",
-    width: 7,
-    height: 7,
+    width: 15,
+    height: 15,
     borderRadius: 50,
     alignSelf: "center",
-    marginTop: 0.75,
+    marginTop: 1.25,
   },
 });
