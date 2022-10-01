@@ -28,5 +28,6 @@ const styles = StyleSheet.create({
     marginVertical: 0.5,
     borderColor: "blue",
     borderWidth: 1,
+    alignSelf: "center"
   },
 });
