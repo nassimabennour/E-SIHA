@@ -3,11 +3,15 @@ import { StyleSheet, View } from "react-native";
 import { RoundedImage } from "src/components/atoms/RoundedImage";
 import { Typography } from "src/components/atoms/Typography";
 
-export const RoundedImageLabel: FC = () => {
+type Props = {
+  profile: string
+}
+
+export const RoundedImageLabel: FC<Props> = ({profile}) => {
   return (
     <View style={styles.container}>
       <RoundedImage />
-      <Typography text="Medecin" textType="N1" />
+      <Typography text={profile} textType="N1" />
     </View>
   );
 };
